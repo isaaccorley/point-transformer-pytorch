@@ -1,0 +1,21 @@
+data:
+  dataset: ModelNet40
+  root: data
+  num_points: 2048
+  num_classes: 40
+  
+  transforms:
+    jitter_mean: 0.0
+    jitter_std: 0.02
+
+train:
+  lr: 1E-3
+  momentum: 0.9
+  weight_decay: 1E-3
+  epochs: 100
+  batch_size: 128
+  num_prefetch: 8
+  log_interval: 10
+  save_dir: /content/drive/MyDrive/Github/pointnet-pytorch/models
+
+device: cuda
